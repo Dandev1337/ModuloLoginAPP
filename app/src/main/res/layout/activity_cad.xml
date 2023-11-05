@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+    <EditText
+        android:id="@+id/edtNomeCad"
+        style="@style/estiloedt"
+
+        android:layout_marginTop="34dp"
+        android:drawableRight="@android:drawable/ic_menu_myplaces"
+        android:hint="Nome"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/edtEmailCad"
+        style="@style/estiloedt"
+        android:layout_marginTop="52dp"
+        android:drawableRight="@drawable/baseline_alternate_email_24"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtNomeCad" />
+
+    <EditText
+        android:id="@+id/edtSenhaCad"
+        style="@style/estiloedt"
+        android:layout_marginTop="44dp"
+        android:drawableRight="@drawable/baseline_remove_red_eye_24"
+        android:hint="Senha"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmailCad" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCad"
+        android:layout_width="260dp"
+        android:layout_height="47dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/backbotao"
+        android:text="Cadastrar"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtSenhaCad"></androidx.appcompat.widget.AppCompatButton>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="141dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_609b1d7_4a7d_41be_bd18_081ecb35eb9e" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="estiloedt">
+        <item name="android:layout_width">384dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">116dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:background">@drawable/backedit</item>
+        <item name="android:ems">10</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="estilobotao">
+
+    </style>
+
+
+</resources>
