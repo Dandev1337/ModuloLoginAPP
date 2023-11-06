@@ -6,6 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
+import java.util.ArrayList;
+
 import br.edu.ifbaiano.guanambi.aplicacaoshape.helper.DBHelper;
 import br.edu.ifbaiano.guanambi.aplicacaoshape.model.User;
 
@@ -118,40 +120,37 @@ public class UserDAO {
 
     }
 
-//PROXIMA AULA
-//PROXIMA AULA
-//    private Cursor listarUsers(){
-//
-//        SQLiteDatabase dbLite = this.db.getReadableDatabase();
-//
-//        String sql = "SELECT id as _id, nome From user;";
-//        Cursor c = dbLite.rawQuery(sql,null);
-//
-//        if(c != null){
-//            c.moveToFirst();
-//        }
-//
-//        return c;
-//    }
-//PROXIMA AULA
-//PROXIMA AULA
-//    public ArrayList<User> listarUsersArray(){
-//
-//        ArrayList<User> list = new ArrayList<>();
-//
-//        Cursor c = this.listarUsers();
-//
-//        while (!c.isAfterLast()){
-//            User u = new User(
-//                    c.getString(0),
-//                    c.getString(2),
-//                    c.getString(1)
-//            );
-//            list.add(u);
-//
-//        }
-//
-//        return list;
-//    }
+
+  public Cursor listarUsers(){
+
+      SQLiteDatabase dbLite = this.db.getReadableDatabase();
+
+        String sql = "SELECT email as _id, nome From user;";
+        Cursor c = dbLite.rawQuery(sql,null);
+
+        if(c != null){
+            c.moveToFirst();
+        }
+
+        return c;
+    }
+   public ArrayList<User> listarUsersArray(){
+
+        ArrayList<User> list = new ArrayList<>();
+
+        Cursor c = this.listarUsers();
+
+        while (!c.isAfterLast()){
+            User u = new User(
+                    c.getString(0),
+                    c.getString(2),
+                    c.getString(1)
+            );
+            list.add(u);
+
+        }
+
+        return list;
+    }
 
 }

@@ -5,6 +5,7 @@
     <uses-feature
         android:name="android.hardware.telephony"
         android:required="false" />
+
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -17,6 +18,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Aplicacaoshape"
         tools:targetApi="31">
+        <activity
+            android:name=".activity.ListaUser"
+            android:exported="false" />
         <activity
             android:name=".activity.ExcluirActivity"
             android:exported="false" />
