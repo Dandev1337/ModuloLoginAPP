@@ -33,7 +33,6 @@ public class ActivityPrincipal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
-
         txtEmail = findViewById(R.id.txtEmail);
         txtNome = findViewById(R.id.txtNome);
         btnSair = findViewById(R.id.btnSair);
@@ -51,13 +50,11 @@ public class ActivityPrincipal extends AppCompatActivity {
         UserDAO uDao = new UserDAO(getApplicationContext(), user);
         user = uDao.obterUserByEmail();
 
+
         txtEmail.setText(user.getMail());
         txtNome.setText(user.getName());
 
-       // Intent it = getIntent();
-       // String email = it.getStringExtra("email");
 
-        //txtEmail.setText(email);
 
         btnSair.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -45,7 +45,6 @@ import br.edu.ifbaiano.guanambi.aplicacaoshape.model.User;
                         SharedPreferences.Editor editor = sp.edit();
                         editor.putString("email", edtEmail.getText().toString());
                         editor.apply();
-
                         Intent it = new Intent(MainActivity.this, ActivityPrincipal.class);
                         startActivity(it);
                         finish();

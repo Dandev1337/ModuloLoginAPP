@@ -38,7 +38,7 @@
         android:layout_marginTop="44dp"
         android:drawableRight="@drawable/baseline_remove_red_eye_24"
         android:hint="Senha"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
